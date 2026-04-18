@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Obito Bot v1.0</title>
+  <title>Makima Base v4.01</title>
   <style>
     * {
       margin: 0;
@@ -14,8 +14,8 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #050816;
-      color: #fff;
+      background: #0f0a06;
+      color: #fff7ed;
       overflow-x: hidden;
     }
 
@@ -26,19 +26,19 @@
       width: 400px;
       height: 400px;
       border-radius: 50%;
-      filter: blur(100px);
+      filter: blur(110px);
       z-index: -1;
       animation: pulse 6s infinite alternate;
     }
 
     body::before {
-      background: rgba(0, 200, 255, 0.18);
+      background: rgba(255, 106, 0, 0.22);
       top: -100px;
       left: -120px;
     }
 
     body::after {
-      background: rgba(140, 0, 255, 0.18);
+      background: rgba(255, 140, 0, 0.18);
       bottom: -120px;
       right: -120px;
     }
@@ -69,13 +69,13 @@
     .badge {
       display: inline-block;
       padding: 10px 18px;
-      border: 1px solid rgba(0, 255, 255, 0.3);
+      border: 1px solid rgba(255, 120, 0, 0.35);
       border-radius: 999px;
-      background: rgba(0, 255, 255, 0.08);
-      color: #7ee7ff;
+      background: rgba(255, 120, 0, 0.1);
+      color: #ffb36b;
       font-size: 14px;
       margin-bottom: 20px;
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+      box-shadow: 0 0 20px rgba(255, 120, 0, 0.12);
     }
 
     .hero h1 {
@@ -86,7 +86,7 @@
     }
 
     .hero h1 span {
-      background: linear-gradient(90deg, #67e8f9, #3b82f6, #c084fc);
+      background: linear-gradient(90deg, #ffb347, #ff7a18, #ff4500);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -94,7 +94,7 @@
     .hero p {
       max-width: 760px;
       margin: auto;
-      color: #cbd5e1;
+      color: #fed7aa;
       font-size: 18px;
       line-height: 1.7;
     }
@@ -114,24 +114,26 @@
     }
 
     .btn-primary {
-      background: #22d3ee;
-      color: #000;
-      box-shadow: 0 0 25px rgba(34, 211, 238, 0.3);
+      background: #ff6a00;
+      color: #1a0d00;
+      box-shadow: 0 0 25px rgba(255, 106, 0, 0.35);
     }
 
     .btn-primary:hover {
       transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 0 30px rgba(255, 106, 0, 0.55);
     }
 
     .btn-secondary {
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: white;
+      border: 1px solid rgba(255, 180, 120, 0.18);
+      color: #fff7ed;
       background: rgba(255, 255, 255, 0.04);
     }
 
     .btn-secondary:hover {
       transform: translateY(-3px) scale(1.03);
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255, 140, 0, 0.08);
+      border-color: rgba(255, 140, 0, 0.35);
     }
 
     .grid {
@@ -143,7 +145,7 @@
 
     .card {
       background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 180, 120, 0.08);
       padding: 24px;
       border-radius: 22px;
       transition: 0.3s ease;
@@ -153,7 +155,8 @@
 
     .card:hover {
       transform: translateY(-6px);
-      border-color: rgba(34, 211, 238, 0.35);
+      border-color: rgba(255, 106, 0, 0.4);
+      box-shadow: 0 10px 35px rgba(255, 106, 0, 0.08);
     }
 
     .card h2,
@@ -162,7 +165,7 @@
     }
 
     .card p {
-      color: #cbd5e1;
+      color: #fdba74;
       line-height: 1.6;
     }
 
@@ -176,7 +179,7 @@
     }
 
     .section-desc {
-      color: #cbd5e1;
+      color: #fed7aa;
       margin-bottom: 20px;
       line-height: 1.7;
     }
@@ -186,29 +189,29 @@
       padding: 8px 14px;
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      color: #cbd5e1;
+      border: 1px solid rgba(255, 180, 120, 0.08);
+      color: #ffb36b;
       font-size: 13px;
       margin-bottom: 12px;
     }
 
     .cmd-box {
       background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 180, 120, 0.08);
       border-radius: 22px;
       padding: 24px;
     }
 
     .cmd-box h3 {
-      color: #67e8f9;
+      color: #ff9a3c;
       margin-bottom: 16px;
     }
 
     .cmd {
       display: block;
-      background: #020617;
-      color: #4ade80;
-      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: #140c05;
+      color: #ffd166;
+      border: 1px solid rgba(255, 180, 120, 0.08);
       padding: 12px 14px;
       border-radius: 12px;
       margin-bottom: 12px;
@@ -221,8 +224,8 @@
       margin: 40px 0 20px;
       padding: 35px;
       border-radius: 28px;
-      background: linear-gradient(135deg, rgba(34, 211, 238, 0.12), rgba(59, 130, 246, 0.12));
-      border: 1px solid rgba(34, 211, 238, 0.18);
+      background: linear-gradient(135deg, rgba(255, 106, 0, 0.14), rgba(255, 69, 0, 0.12));
+      border: 1px solid rgba(255, 120, 0, 0.2);
       text-align: center;
     }
 
@@ -232,21 +235,25 @@
     }
 
     .cta p {
-      color: #cbd5e1;
+      color: #fed7aa;
       margin-bottom: 20px;
       line-height: 1.7;
     }
 
     a {
-      color: #67e8f9;
+      color: #ffb36b;
       text-decoration: none;
+    }
+
+    a:hover {
+      color: #ffd2a1;
     }
 
     footer {
       text-align: center;
       padding: 28px 12px 40px;
-      color: #94a3b8;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: #fdba74;
+      border-top: 1px solid rgba(255, 180, 120, 0.08);
       margin-top: 30px;
     }
 
@@ -270,15 +277,15 @@
   <div class="container">
     <section class="hero">
       <div class="badge">Feito por ObitoSpam</div>
-      <h1>Obito Bot <span>v1.0</span></h1>
+      <h1>Makima Base <span>v4.01</span></h1>
       <p>
         Site oficial para download da base do bot, comandos corrigidos,
         links úteis, suporte, atualizações e divulgação dos serviços da Obito Store.
       </p>
 
       <div class="buttons">
-        <a class="btn btn-primary" href="https://mega.nz/file/gJhSnQ6K#YvIbntd7lLGoOqN8vwZl-vkWdUnDXfWCTm2t6Pz2dGQ" target="_blank">
-          Baixar Bot v1.0
+        <a class="btn btn-primary" href="https://mega.nz/file/dcAXDAjZ#9tSEeh8HS7HnihZkX-ePm2QCenRa5LuQFyvmW71wJ9E" target="_blank">
+          Baixar Makima Base v4.01
         </a>
         <a class="btn btn-secondary" href="#comandos">
           Ver comandos
@@ -303,10 +310,10 @@
         </div>
 
         <div class="card">
-          <h2>📦 Obito bot Base</h2>
-          <p>Download direto da base pronta do bot v1.0 para editar e iniciar.</p>
+          <h2>📦 Makima Base</h2>
+          <p>Download direto da base pronta do bot v4.01 para editar e iniciar.</p>
           <br>
-          <a href="https://mega.nz/file/gJhSnQ6K#YvIbntd7lLGoOqN8vwZl-vkWdUnDXfWCTm2t6Pz2dGQ" target="_blank">Baixar agora</a>
+          <a href="https://mega.nz/file/dcAXDAjZ#9tSEeh8HS7HnihZkX-ePm2QCenRa5LuQFyvmW71wJ9E" target="_blank">Baixar agora</a>
         </div>
       </div>
     </section>
@@ -388,7 +395,7 @@
       <p>
         Faça o download da base, execute os comandos e comece a personalizar seu bot agora mesmo.
       </p>
-      <a class="btn btn-primary" href="https://mega.nz/file/gJhSnQ6K#YvIbntd7lLGoOqN8vwZl-vkWdUnDXfWCTm2t6Pz2dGQ" target="_blank">
+      <a class="btn btn-primary" href="https://mega.nz/file/dcAXDAjZ#9tSEeh8HS7HnihZkX-ePm2QCenRa5LuQFyvmW71wJ9E" target="_blank">
         Download da Base
       </a>
       <a class="btn btn-secondary" href="https://obitostore.shop/" target="_blank">
@@ -397,7 +404,7 @@
     </section>
 
     <footer>
-      <p>© 2026 Obito Bot v1.0 — Feito por ObitoSpam</p>
+      <p>© 2026 Makima Base v4.01 — Feito por ObitoSpam</p>
       <p>Download, suporte, comandos corrigidos e divulgação oficial da base.</p>
     </footer>
   </div>
